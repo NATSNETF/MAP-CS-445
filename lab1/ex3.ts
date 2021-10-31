@@ -8,6 +8,9 @@ class Car{
         this.name=name;
         this.acceleration=0;
     }
+    //constructor(public name:string,public acceleration:number=0){
+
+//}
     honk(): void{
         console.log(this.name + "is saying: tooooooooor !");
  
@@ -16,7 +19,7 @@ class Car{
         this.acceleration=this.acceleration + speed;
     }
 }
-let car= new Car("BMW");
+let car: Car= new Car("BMW");
 car.honk();// BMW is saying Toooott
 console.log(car.acceleration);//0
 car.accelerate(60);
