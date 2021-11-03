@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Picture</title>
+    <script>
+        window.onload= function(){
+            document.getElementById('swap').onclick=function(){
+                let picture1 = document.getElementById("img1");
+                let picture2 = document.getElementById("img2");
+                let temp = picture1.src;
+                picture1.src = picture2.src;
+                picture2.src = temp;
+
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <img id="img1" src="tree.jpg" alt="white tree"width="200px"/>
+    <img id="img2" src="river.jpg"alt="river"width="200px"/>
+    <br>
+    <button id='swap'>Swap</button>
+</body>
+</body>
+</html>
