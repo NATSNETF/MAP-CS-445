@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The prototype constructor allows you to add new properties or methods to the Array() object.</p>
+
+<p id="demo"></p>
+
+<script>
+// Add a new method
+Array.prototype.myUcase = function() {
+  for (let i = 0; i < this.length; i++) {
+    this[i] = this[i].toUpperCase();
+  }
+};
+
+// Use the method on any array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.myUcase();
+document.getElementById("demo").innerHTML = fruits;
+</script>
+
+</body>
+</html>

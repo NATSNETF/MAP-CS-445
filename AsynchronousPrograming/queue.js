@@ -1,6 +1,5 @@
-setTimeout(() => console.log('setTimeout results'), 0);//asynchronous
-const promise = new Promise((resolve) =>{
-     resolve(`Promise results`); //asynchronous
+setTimeout(() => console.log('setTimeout results'), 2000);//asynchronous
+const promise = new Promise((resolve) =>{ resolve(`Promise results`); //asynchronous it is promise
 console.log("inside promise excttutor.."); // 
 //inside this new promise ,,,, when we start printing it will show all synchronos
 });

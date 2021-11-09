@@ -22,3 +22,5 @@ const counter ={
 }
 let test=counter.incrementPeriodically;
 test();
+//output
+//NaN..NaN ....nonstop
