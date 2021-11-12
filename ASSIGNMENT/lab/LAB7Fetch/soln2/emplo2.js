@@ -6,7 +6,7 @@ window.onload=function(){
     document.getElementById('refresh').onclick = fetchEmployes;
 }
 async function fetchEmployes(){
-    let result= await fetch('https://randomuser.me/api/?results=10'); // will give us promise
+    let result= await fetch('https://randomuser.me/api/?results=5'); // will give us promise
     let emps= await result.json();
 //console.log(emp);
     renderEmployees(emps.results)
